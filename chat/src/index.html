@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="user-container">
+            <label for="nickname"></label>
+            <a href="park.html"><button><img src="images/homeicon.png" style="width: 30px; height:30;"></button></a>  
+            <input type="text" id="nickname" placeholder="사용자 이름">
+        </div>
+        <div class="display-container">
+            <ul class="listt">
+               
+            </ul>
+        </div>
+        <div class="input-container">
+            <span>
+                <input id="del" type="text" class="inputt">
+                <button  class="buttonn">전송</button>
+            </span>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+    <script>
+        function test() {
+            document.getElementById("del").value ='';
+        }
+    </script>
+</body>
+    
+</html>
